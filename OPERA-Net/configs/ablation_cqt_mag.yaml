@@ -1,0 +1,83 @@
+# Current PDF reproduction. Unspecified hyperparameters are implementation choices.
+seed: 42
+device: cuda
+out_dir: exp/ablation_cqt_mag
+epochs: 10
+train_batch_size: 8
+eval_batch_size: 16
+num_workers: 4
+amp: false
+log_interval: 200
+eval_every: 1
+grad_clip: 5.0
+loss: weighted_ce
+class_weight_mode: inverse
+model:
+  name: opera_net
+  params:
+    variant: cqt_mag
+    sample_rate: 16000
+    num_samples: 64000
+    fmin: 32.7
+    n_bins: 84
+    bins_per_octave: 12
+    hop_length: 320
+    n_frames: 200
+    prefer_nnaudio: true
+    wavlm_path: C:/Code/SVDD/wavlm-base-plus
+    feat_dim: 256
+    n_frozen_layers: 6
+    target_frames: 100
+    finetune_wavlm: true
+    use_signal_stream: true
+    use_phase: false
+    use_gating: false
+    pooling: stats
+    dropout: 0.2
+    num_classes: 2
+optim:
+  lr_head: 0.0001
+  lr_ssl: 1.0e-05
+  ssl_lr_decay: 0.85
+  weight_decay: 0.01
+  betas:
+  - 0.9
+  - 0.999
+  warmup_ratio: 0.03
+  min_lr_ratio: 0.05
+data:
+  train:
+    kind: ctrsvdd
+    root: C:/Code/SVDD/CtrSVDD2024_Baseline/dataset
+    splits:
+    - train
+    mode: random
+    check_exists: true
+  eval:
+    kind: ctrsvdd
+    root: C:/Code/SVDD/CtrSVDD2024_Baseline/dataset
+    splits:
+    - dev
+    mode: center
+    check_exists: true
+  cross_eval:
+    kind: singfake
+    root: C:/Code/SVDD/singfake_dataset
+    subsets:
+    - T01
+    - T02
+    - T03
+    track_level: false
+  test:
+    kind: ctrsvdd
+    root: C:/Code/SVDD/CtrSVDD2024_Baseline/dataset
+    splits:
+    - test
+    mode: center
+    check_exists: true
+paper:
+  source: docs/paper_reference.json
+  status: reproduction_not_original
+  metrics:
+  - EER
+  unspecified_settings: See docs/paper_reference.json

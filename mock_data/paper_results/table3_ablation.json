@@ -1,0 +1,39 @@
+{
+  "dataset": "CtrSVDD and SingFake",
+  "unit": "EER percent",
+  "source": "paper Table 3 (ablation)",
+  "columns": [
+    "CtrSVDD",
+    "SingFake"
+  ],
+  "rows": [
+    {
+      "model": "WavLM Stream (Fine-tuned)",
+      "values": [
+        2.85,
+        6.15
+      ]
+    },
+    {
+      "model": "+ CQT (Magnitude-only)",
+      "values": [
+        2.24,
+        5.45
+      ]
+    },
+    {
+      "model": "+ PC-CQT (w/ Phase)",
+      "values": [
+        1.82,
+        4.95
+      ]
+    },
+    {
+      "model": "OPERA-Net (Full w/ Gating)",
+      "values": [
+        1.54,
+        4.72
+      ]
+    }
+  ]
+}

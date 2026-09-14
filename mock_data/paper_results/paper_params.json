@@ -1,0 +1,35 @@
+{
+  "sample_rate": 16000,
+  "segment_seconds": 4,
+  "fmin": 32.7,
+  "n_bins": 84,
+  "bins_per_octave": 12,
+  "hop_length": 320,
+  "signal_encoder": "lightweight ResNet-18",
+  "semantic_encoder": "WavLM Base+",
+  "frozen_transformer_layers": 6,
+  "finetuned_transformer_layers": 6,
+  "phase": "wrap(phi[n]-phi[n-1]) in (-pi,pi]",
+  "gate": "sigmoid(MLP(F_sem)); F_sig * gate",
+  "classifier": "concatenate semantic and gated signal features; two FC layers",
+  "loss": "weighted cross entropy",
+  "optimizer": "AdamW with layerwise learning-rate decay",
+  "ctrsvdd_singers": {
+    "train": 59,
+    "dev": 55,
+    "eval": 48
+  },
+  "ctrsvdd_ranking_attacks": [
+    "A09",
+    "A10",
+    "A11",
+    "A12",
+    "A13"
+  ],
+  "singfake_subsets": [
+    "T01",
+    "T02",
+    "T03"
+  ],
+  "metric": "EER percent"
+}

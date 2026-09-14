@@ -1,0 +1,40 @@
+{
+  "cqt": {
+    "Q": 16.817153745105756,
+    "fmax_hz": 3950.680323160497,
+    "max_kernel": 8229,
+    "n_frames": 200,
+    "frame_rate_hz": 50.0,
+    "matches_paper": true
+  },
+  "alignment": {
+    "wavlm_frames": 200,
+    "cqt_frames": 200,
+    "signal_stream_frames": 100,
+    "target_frames": 100,
+    "aligned": true
+  },
+  "dataset": {
+    "per_split": {
+      "train": {
+        "bonafide": 12169,
+        "spoof": 72235,
+        "total": 84404
+      },
+      "dev": {
+        "bonafide": 6547,
+        "spoof": 37078,
+        "total": 43625
+      },
+      "test": {
+        "bonafide": 13596,
+        "spoof": 79173,
+        "total": 92769
+      }
+    },
+    "total_bonafide": 32312,
+    "total_spoof": 188486,
+    "matches_paper_full": true
+  },
+  "model": {}
+}

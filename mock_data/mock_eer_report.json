@@ -1,0 +1,374 @@
+{
+  "ctrsvdd": {
+    "B01 (LFCC)": {
+      "pooled_paper": 11.37,
+      "pooled_mock": 11.349825311773706,
+      "pooled_delta": -0.02017468822629276,
+      "pooled_mock_interp": 11.3580795732385,
+      "per_attack_paper": {
+        "A09": 5.35,
+        "A10": 2.92,
+        "A11": 5.84,
+        "A12": 29.47,
+        "A13": 3.65
+      },
+      "per_attack_mock": {
+        "A09": 5.347498541036662,
+        "A10": 2.9043981113056403,
+        "A11": 5.836118626982863,
+        "A12": 29.48933132895779,
+        "A13": 3.6620220990744605
+      },
+      "per_attack_mock_interp": {
+        "A09": 5.355191256830604,
+        "A10": 2.912621359223301,
+        "A11": 5.825242718446602,
+        "A12": 29.479258605472197,
+        "A13": 3.661202185792345
+      },
+      "max_abs_delta": 0.02017468822629276,
+      "protocol": "ctrsvdd_a09_a13_bonafide_all",
+      "n_bonafide": 2266,
+      "n_spoof": 8998,
+      "legacy_non_acesinger_pooled_mock": 12.044789715174803,
+      "legacy_non_acesinger_target_pct": 12.03,
+      "legacy_role": "拟合点",
+      "legacy_protocol": "ctrsvdd_a09_a13_bonafide_non_acesinger"
+    },
+    "B02 (AASIST)": {
+      "pooled_paper": 10.39,
+      "pooled_mock": 10.414126548078645,
+      "pooled_delta": 0.02412654807864456,
+      "pooled_mock_interp": 10.413425205601246,
+      "per_attack_paper": {
+        "A09": 6.72,
+        "A10": 0.96,
+        "A11": 3.59,
+        "A12": 26.83,
+        "A13": 0.95
+      },
+      "per_attack_mock": {
+        "A09": 6.714583363477206,
+        "A10": 0.9772401718924075,
+        "A11": 3.6126343813754285,
+        "A12": 26.82453052692705,
+        "A13": 0.9772401718924075
+      },
+      "per_attack_mock_interp": {
+        "A09": 6.721311475409841,
+        "A10": 0.9708737864077669,
+        "A11": 3.60655737704918,
+        "A12": 26.817640047675805,
+        "A13": 0.9708737864077669
+      },
+      "max_abs_delta": 0.027240171892407572,
+      "protocol": "ctrsvdd_a09_a13_bonafide_all",
+      "n_bonafide": 2266,
+      "n_spoof": 8998,
+      "legacy_non_acesinger_pooled_mock": 10.992317489203952,
+      "legacy_non_acesinger_target_pct": 11.16,
+      "legacy_role": "独立预测",
+      "legacy_protocol": "ctrsvdd_a09_a13_bonafide_non_acesinger"
+    },
+    "I2R-ASTAR": {
+      "pooled_paper": 2.22,
+      "pooled_mock": 2.209066955547836,
+      "pooled_delta": -0.010933044452164253,
+      "pooled_mock_interp": 2.2116025783507465,
+      "per_attack_paper": {
+        "A09": 0.65,
+        "A10": 0.51,
+        "A11": 2.49,
+        "A12": 4.57,
+        "A13": 0.64
+      },
+      "per_attack_mock": {
+        "A09": 0.6588485523707567,
+        "A10": 0.48862008594620654,
+        "A11": 2.4651657430584706,
+        "A12": 4.537327987864339,
+        "A13": 0.6094608346717193
+      },
+      "per_attack_mock_interp": {
+        "A09": 0.6557377049180357,
+        "A10": 0.4918032786885296,
+        "A11": 2.471315092674316,
+        "A12": 4.545454545454546,
+        "A13": 0.617828773168579
+      },
+      "max_abs_delta": 0.03267201213566118,
+      "protocol": "ctrsvdd_a09_a13_bonafide_all",
+      "n_bonafide": 2266,
+      "n_spoof": 8998,
+      "legacy_non_acesinger_pooled_mock": 2.4000435116533834,
+      "legacy_non_acesinger_target_pct": null,
+      "legacy_role": null,
+      "legacy_protocol": "ctrsvdd_a09_a13_bonafide_non_acesinger"
+    },
+    "NBUMISL": {
+      "pooled_paper": 2.0,
+      "pooled_mock": 1.99316137135113,
+      "pooled_delta": -0.006838628648869971,
+      "pooled_mock_interp": 2.0004445432318274,
+      "per_attack_paper": {
+        "A09": 0.13,
+        "A10": 0.11,
+        "A11": 0.94,
+        "A12": 5.17,
+        "A13": 0.1
+      },
+      "per_attack_mock": {
+        "A09": 0.12084074872551831,
+        "A10": 0.09877543539806907,
+        "A11": 0.9278524541933758,
+        "A12": 5.17401353058689,
+        "A13": 0.09877543539806907
+      },
+      "per_attack_mock_interp": {
+        "A09": 0.1323918799646955,
+        "A10": 0.10928961748634114,
+        "A11": 0.928961748633883,
+        "A12": 5.163283318623124,
+        "A13": 0.10928961748634114
+      },
+      "max_abs_delta": 0.012147545806624138,
+      "protocol": "ctrsvdd_a09_a13_bonafide_all",
+      "n_bonafide": 2266,
+      "n_spoof": 8998,
+      "legacy_non_acesinger_pooled_mock": 2.1661869800431863,
+      "legacy_non_acesinger_target_pct": null,
+      "legacy_role": null,
+      "legacy_protocol": "ctrsvdd_a09_a13_bonafide_non_acesinger"
+    },
+    "Fosafer Speech": {
+      "pooled_paper": 1.65,
+      "pooled_mock": 1.633264781601952,
+      "pooled_delta": -0.016735218398047813,
+      "pooled_mock_interp": 1.6336963769726598,
+      "per_attack_paper": {
+        "A09": 0.23,
+        "A10": 0.37,
+        "A11": 0.06,
+        "A12": 4.19,
+        "A13": 0.07
+      },
+      "per_attack_mock": {
+        "A09": 0.21961618412358738,
+        "A10": 0.38984465054813744,
+        "A11": 0.04938771769903176,
+        "A12": 4.1820212142602395,
+        "A13": 0.04938771769903176
+      },
+      "per_attack_mock_interp": {
+        "A09": 0.22065313327449249,
+        "A10": 0.38251366120218844,
+        "A11": 0.05464480874316502,
+        "A12": 4.192409532215358,
+        "A13": 0.05464480874316502
+      },
+      "max_abs_delta": 0.020612282300968246,
+      "protocol": "ctrsvdd_a09_a13_bonafide_all",
+      "n_bonafide": 2266,
+      "n_spoof": 8998,
+      "legacy_non_acesinger_pooled_mock": 1.7875003969136025,
+      "legacy_non_acesinger_target_pct": null,
+      "legacy_role": null,
+      "legacy_protocol": "ctrsvdd_a09_a13_bonafide_non_acesinger"
+    },
+    "OPERA-Net (Ours)": {
+      "pooled_paper": 1.54,
+      "pooled_mock": 1.544679831764124,
+      "pooled_delta": 0.0046798317641238985,
+      "pooled_mock_interp": 1.5445719329214476,
+      "per_attack_paper": {
+        "A09": 0.2,
+        "A10": 0.25,
+        "A11": 0.09,
+        "A12": 3.85,
+        "A13": 0.06
+      },
+      "per_attack_mock": {
+        "A09": 0.21961618412358738,
+        "A10": 0.26900390182261913,
+        "A11": 0.09877543539806907,
+        "A12": 3.8267144406561404,
+        "A13": 0.04938771769903176
+      },
+      "per_attack_mock_interp": {
+        "A09": 0.21857923497268228,
+        "A10": 0.264783759929391,
+        "A11": 0.088261253309797,
+        "A12": 3.83936451897617,
+        "A13": 0.05464480874316502
+      },
+      "max_abs_delta": 0.023285559343859674,
+      "protocol": "ctrsvdd_a09_a13_bonafide_all",
+      "n_bonafide": 2266,
+      "n_spoof": 8998,
+      "legacy_non_acesinger_pooled_mock": 1.676128921506366,
+      "legacy_non_acesinger_target_pct": null,
+      "legacy_role": null,
+      "legacy_protocol": "ctrsvdd_a09_a13_bonafide_non_acesinger"
+    }
+  },
+  "singfake": {
+    "AASIST": {
+      "by_split_paper": {
+        "T01": 6.28,
+        "T02": 12.55,
+        "T03": 13.55
+      },
+      "by_split_mock": {
+        "T01": 6.000000000000003,
+        "T02": 12.666666666666671,
+        "T03": 13.33333333333333
+      },
+      "by_split_mock_interp": {
+        "T01": 6.000000000000005,
+        "T02": 12.666666666666668,
+        "T03": 13.333333333333334
+      },
+      "overall_paper": 12.61,
+      "overall_mock": 12.666666666666671,
+      "overall_mock_interp": 12.666666666666668,
+      "overall_delta": 0.05666666666667197,
+      "max_abs_delta": 0.2799999999999976
+    },
+    "W2V2-AASIST": {
+      "by_split_paper": {
+        "T01": 4.62,
+        "T02": 8.23,
+        "T03": 13.62
+      },
+      "by_split_mock": {
+        "T01": 4.666666666666665,
+        "T02": 7.999999999999999,
+        "T03": 13.33333333333333
+      },
+      "by_split_mock_interp": {
+        "T01": 4.666666666666667,
+        "T02": 8.0,
+        "T03": 13.333333333333334
+      },
+      "overall_paper": 11.71,
+      "overall_mock": 11.888888888888888,
+      "overall_mock_interp": 11.777777777777775,
+      "overall_delta": 0.17888888888888665,
+      "max_abs_delta": 0.28666666666666885
+    },
+    "MERT-W2V2-AASIST": {
+      "by_split_paper": {
+        "T01": 4.31,
+        "T02": 9.79,
+        "T03": 8.85
+      },
+      "by_split_mock": {
+        "T01": 4.000000000000002,
+        "T02": 10.0,
+        "T03": 8.666666666666668
+      },
+      "by_split_mock_interp": {
+        "T01": 4.0000000000000036,
+        "T02": 9.999999999999998,
+        "T03": 8.666666666666668
+      },
+      "overall_paper": 8.54,
+      "overall_mock": 8.666666666666668,
+      "overall_mock_interp": 8.666666666666668,
+      "overall_delta": 0.1266666666666687,
+      "max_abs_delta": 0.30999999999999783
+    },
+    "SingGraph": {
+      "by_split_paper": {
+        "T01": 4.01,
+        "T02": 6.23,
+        "T03": 6.3
+      },
+      "by_split_mock": {
+        "T01": 4.000000000000002,
+        "T02": 6.000000000000003,
+        "T03": 6.000000000000003
+      },
+      "by_split_mock_interp": {
+        "T01": 4.0,
+        "T02": 6.0,
+        "T03": 6.000000000000005
+      },
+      "overall_paper": 6.05,
+      "overall_mock": 6.000000000000003,
+      "overall_mock_interp": 6.0,
+      "overall_delta": -0.04999999999999716,
+      "max_abs_delta": 0.29999999999999716
+    },
+    "OPERA-Net (Ours)": {
+      "by_split_paper": {
+        "T01": 3.12,
+        "T02": 4.85,
+        "T03": 4.92
+      },
+      "by_split_mock": {
+        "T01": 3.3333333333333326,
+        "T02": 4.666666666666665,
+        "T03": 4.666666666666665
+      },
+      "by_split_mock_interp": {
+        "T01": 3.3333333333333335,
+        "T02": 4.666666666666667,
+        "T03": 4.666666666666667
+      },
+      "overall_paper": 4.72,
+      "overall_mock": 4.666666666666665,
+      "overall_mock_interp": 4.666666666666667,
+      "overall_delta": -0.053333333333334565,
+      "max_abs_delta": 0.25333333333333474
+    }
+  },
+  "ablation": {
+    "WavLM Stream (Fine-tuned)": {
+      "CtrSVDD": 2.85,
+      "SingFake": 6.15,
+      "reproducible": false,
+      "reason": "论文未给出该变体的分攻击 EER，无法从 mock 分数复算"
+    },
+    "+ CQT (Magnitude-only)": {
+      "CtrSVDD": 2.24,
+      "SingFake": 5.45,
+      "reproducible": false,
+      "reason": "论文未给出该变体的分攻击 EER，无法从 mock 分数复算"
+    },
+    "+ PC-CQT (w/ Phase)": {
+      "CtrSVDD": 1.82,
+      "SingFake": 4.95,
+      "reproducible": false,
+      "reason": "论文未给出该变体的分攻击 EER，无法从 mock 分数复算"
+    },
+    "OPERA-Net (Full w/ Gating)": {
+      "CtrSVDD": 1.54,
+      "SingFake": 4.72,
+      "reproducible": false,
+      "reason": "论文未给出该变体的分攻击 EER，无法从 mock 分数复算"
+    }
+  },
+  "summary": {
+    "ctrsvdd_max_pooled_abs_delta_pp": 0.02412654807864456,
+    "ctrsvdd_max_per_attack_abs_delta_pp": 0.03267201213566118,
+    "singfake_max_abs_delta_pp": 0.30999999999999783,
+    "ablation_reproducible_cells": 0,
+    "cohort_reconciliation": [
+      {
+        "system": "B01 (LFCC)",
+        "role": "拟合点",
+        "non_acesinger_mock_pct": 12.044789715174803,
+        "non_acesinger_target_pct": 12.03,
+        "delta_pp": 0.01478971517480332
+      },
+      {
+        "system": "B02 (AASIST)",
+        "role": "独立预测",
+        "non_acesinger_mock_pct": 10.992317489203952,
+        "non_acesinger_target_pct": 11.16,
+        "delta_pp": -0.16768251079604823
+      }
+    ]
+  }
+}

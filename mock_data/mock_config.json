@@ -1,0 +1,157 @@
+{
+  "seed": 20260813,
+  "purpose": "mock raw data mirroring the paper's data schema and statistics",
+  "ctrsvdd": {
+    "real_counts": {
+      "train": {
+        "-": 12169,
+        "A01": 11506,
+        "A02": 11506,
+        "A03": 5331,
+        "A04": 4807,
+        "A05": 11506,
+        "A06": 7717,
+        "A07": 9931,
+        "A08": 9931
+      },
+      "dev": {
+        "-": 6547,
+        "A01": 6592,
+        "A02": 6592,
+        "A03": 1942,
+        "A04": 525,
+        "A05": 6592,
+        "A06": 5535,
+        "A07": 4650,
+        "A08": 4650
+      },
+      "test": {
+        "-": 13596,
+        "A09": 10978,
+        "A10": 10978,
+        "A11": 10978,
+        "A12": 10071,
+        "A13": 10978,
+        "A14": 25190
+      }
+    },
+    "real_sources": {
+      "train": {
+        "m4singer": 43389,
+        "opencpop": 30254,
+        "oniku": 4406,
+        "ofuton": 3584,
+        "jvsmusic": 2771
+      },
+      "dev": {
+        "m4singer": 32048,
+        "kiritan": 8818,
+        "jvsmusic": 2759
+      },
+      "test": {
+        "m4singer": 60426,
+        "kising": 26653,
+        "acesinger": 5690
+      }
+    },
+    "scale_factor": {
+      "train": 0.03125,
+      "dev": 0.03125,
+      "test": 0.16666666666666666
+    },
+    "min_cell": 60,
+    "singers": {
+      "train": 59,
+      "dev": 55,
+      "eval": 48
+    },
+    "note": "test 集的 acesinger = 2845 bonafide + 2845 A14 spoof（按真实比例缩放）",
+    "acesinger_bonafide_note": "acesinger 的 bonafide 与其他来源不共用分数分布：实测更'容易'，分数偏移 δ 由 B01 在 non_acesinger 口径下的 12.03% 单点拟合，B02 的 11.16% 为独立预测（见 mock_ctrsvdd_calibration.json）"
+  },
+  "cohort_sensitivity": {
+    "description": "同一份分数在两个 bonafide cohort 口径下的 pooled EER 必须不同，否则 mock 没有复刻到 CtrSVDD 的协议语义",
+    "targets_non_acesinger_pct": {
+      "B01 (LFCC)": 12.03,
+      "B02 (AASIST)": 11.16
+    },
+    "reference": "OPERA-Net/opera/metrics/eer.py 模块文档串（真实数据实测）"
+  },
+  "singfake": {
+    "meta_rows": {
+      "Training": {
+        "bonafide": 104,
+        "spoof": 112
+      },
+      "Validation": {
+        "bonafide": 25,
+        "spoof": 20
+      },
+      "T01": {
+        "bonafide": 150,
+        "spoof": 150
+      },
+      "T02": {
+        "bonafide": 150,
+        "spoof": 150
+      },
+      "T03": {
+        "bonafide": 150,
+        "spoof": 150
+      },
+      "T04": {
+        "bonafide": 8,
+        "spoof": 7
+      }
+    },
+    "note": "评估集扩大到 150 bonafide/150 spoof，使 EER 可分辨"
+  },
+  "score_model": {
+    "bonafide": "正态等概率分位点；按来源分两条——非 acesinger 用 Q，acesinger 用 −δ+Q",
+    "spoof": "mu_a + s * 正态等概率分位点",
+    "mu_a": "混合 bonafide 下按 EER 目标二分求解（δ=0 时退化为闭式 (1+s)·Q^{-1}(1−EER_a)）",
+    "s": "按论文 pooled EER 二分搜索",
+    "delta": "acesinger bonafide 的分数偏移，用 B01 的 non_acesinger 目标 12.03% 单点拟合",
+    "ordering": "按分组打散后写入，文件顺序不含任何标签或分数信息"
+  },
+  "score_direction": {
+    "ctrsvdd/scores/*.csv": "higher_is_bonafide",
+    "ctrsvdd_note": "模拟官方 baseline 提交格式（analysis/baselines_csv/*.csv）。该格式 score 越高越像 bona fide，需取负后才能送入 opera/metrics/eer.py；实测不取负时 B01/B02 pooled = 88.63%/89.61%，取负后 = 11.37%/10.39%",
+    "singfake/scores/*.csv": "higher_is_spoof",
+    "singfake_note": "真实 SingFake 没有官方分数文件，此为本包自定义格式，采用项目内 opera/metrics/eer.py 的约定（越高越像 spoof）"
+  },
+  "paper_params": {
+    "sample_rate": 16000,
+    "segment_seconds": 4,
+    "fmin": 32.7,
+    "n_bins": 84,
+    "bins_per_octave": 12,
+    "hop_length": 320,
+    "signal_encoder": "lightweight ResNet-18",
+    "semantic_encoder": "WavLM Base+",
+    "frozen_transformer_layers": 6,
+    "finetuned_transformer_layers": 6,
+    "phase": "wrap(phi[n]-phi[n-1]) in (-pi,pi]",
+    "gate": "sigmoid(MLP(F_sem)); F_sig * gate",
+    "classifier": "concatenate semantic and gated signal features; two FC layers",
+    "loss": "weighted cross entropy",
+    "optimizer": "AdamW with layerwise learning-rate decay",
+    "ctrsvdd_singers": {
+      "train": 59,
+      "dev": 55,
+      "eval": 48
+    },
+    "ctrsvdd_ranking_attacks": [
+      "A09",
+      "A10",
+      "A11",
+      "A12",
+      "A13"
+    ],
+    "singfake_subsets": [
+      "T01",
+      "T02",
+      "T03"
+    ],
+    "metric": "EER percent"
+  }
+}

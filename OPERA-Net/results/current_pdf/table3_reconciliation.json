@@ -1,0 +1,82 @@
+[
+  {
+    "model": "WavLM Stream (Fine-tuned)",
+    "column": "CtrSVDD",
+    "paper_reported": 2.85,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "WavLM Stream (Fine-tuned)",
+    "column": "SingFake",
+    "paper_reported": 6.15,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "+ CQT (Magnitude-only)",
+    "column": "CtrSVDD",
+    "paper_reported": 2.24,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "+ CQT (Magnitude-only)",
+    "column": "SingFake",
+    "paper_reported": 5.45,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "+ PC-CQT (w/ Phase)",
+    "column": "CtrSVDD",
+    "paper_reported": 1.82,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "+ PC-CQT (w/ Phase)",
+    "column": "SingFake",
+    "paper_reported": 4.95,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "OPERA-Net (Full w/ Gating)",
+    "column": "CtrSVDD",
+    "paper_reported": 1.54,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "OPERA-Net (Full w/ Gating)",
+    "column": "SingFake",
+    "paper_reported": 4.72,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  }
+]

@@ -1,0 +1,90 @@
+# Current PDF reproduction. Unspecified hyperparameters are implementation choices.
+seed: 42
+device: cuda
+out_dir: exp/baseline_aasist
+epochs: 10
+train_batch_size: 8
+eval_batch_size: 16
+num_workers: 4
+amp: false
+log_interval: 200
+eval_every: 1
+grad_clip: 5.0
+loss: weighted_ce
+class_weight_mode: inverse
+model:
+  name: aasist
+  params:
+    num_classes: 2
+    filts:
+    - 70
+    - - 1
+      - 32
+    - - 32
+      - 32
+    - - 32
+      - 64
+    - - 64
+      - 64
+    gat_dims:
+    - 64
+    - 32
+    pool_ratios:
+    - 0.5
+    - 0.7
+    - 0.5
+    - 0.5
+    temperatures:
+    - 2.0
+    - 2.0
+    - 100.0
+    - 100.0
+    sample_rate: 16000
+    grid:
+    - 16
+    - 16
+optim:
+  lr_head: 0.0001
+  lr_min: 5.0e-06
+  weight_decay: 0.0001
+  betas:
+  - 0.9
+  - 0.999
+  warmup_ratio: 0.03
+  min_lr_ratio: 0.05
+data:
+  train:
+    kind: ctrsvdd
+    root: C:/Code/SVDD/CtrSVDD2024_Baseline/dataset
+    splits:
+    - train
+    mode: random
+    check_exists: true
+  eval:
+    kind: ctrsvdd
+    root: C:/Code/SVDD/CtrSVDD2024_Baseline/dataset
+    splits:
+    - dev
+    mode: center
+    check_exists: true
+  cross_eval:
+    kind: singfake
+    root: C:/Code/SVDD/singfake_dataset
+    subsets:
+    - T01
+    - T02
+    - T03
+    track_level: false
+  test:
+    kind: ctrsvdd
+    root: C:/Code/SVDD/CtrSVDD2024_Baseline/dataset
+    splits:
+    - test
+    mode: center
+    check_exists: true
+paper:
+  source: docs/paper_reference.json
+  status: reproduction_not_original
+  metrics:
+  - EER
+  unspecified_settings: See docs/paper_reference.json

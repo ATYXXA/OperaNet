@@ -1,0 +1,4 @@
+audio=C:\Code\SVDD\mock_data\audio\in_the_wild_sample.flac
+segment_start_sec=136.0000
+segment_end_sec=141.0000
+note=The gate map is an interpretable proxy visualization of semantic-guided suppression and enhancement.

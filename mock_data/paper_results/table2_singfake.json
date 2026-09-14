@@ -1,0 +1,63 @@
+{
+  "dataset": "SingFake",
+  "unit": "EER percent",
+  "source": "paper Table 2",
+  "columns": [
+    "T01",
+    "T02",
+    "T03",
+    "Overall"
+  ],
+  "rows": [
+    {
+      "model": "AASIST",
+      "feature": "Raw Waveform",
+      "values": [
+        6.28,
+        12.55,
+        13.55,
+        12.61
+      ]
+    },
+    {
+      "model": "W2V2-AASIST",
+      "feature": "Wav2vec 2.0",
+      "values": [
+        4.62,
+        8.23,
+        13.62,
+        11.71
+      ]
+    },
+    {
+      "model": "MERT-W2V2-AASIST",
+      "feature": "Wav2vec 2.0",
+      "values": [
+        4.31,
+        9.79,
+        8.85,
+        8.54
+      ]
+    },
+    {
+      "model": "SingGraph",
+      "feature": "MERT + W2V2",
+      "values": [
+        4.01,
+        6.23,
+        6.3,
+        6.05
+      ]
+    },
+    {
+      "model": "OPERA-Net (Ours)",
+      "feature": "PC-CQT + WavLM",
+      "values": [
+        3.12,
+        4.85,
+        4.92,
+        4.72
+      ]
+    }
+  ]
+}

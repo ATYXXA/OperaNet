@@ -1,0 +1,202 @@
+[
+  {
+    "model": "AASIST",
+    "column": "T01",
+    "paper_reported": 6.28,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "AASIST",
+    "column": "T02",
+    "paper_reported": 12.55,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "AASIST",
+    "column": "T03",
+    "paper_reported": 13.55,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "AASIST",
+    "column": "Overall",
+    "paper_reported": 12.61,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "W2V2-AASIST",
+    "column": "T01",
+    "paper_reported": 4.62,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "W2V2-AASIST",
+    "column": "T02",
+    "paper_reported": 8.23,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "W2V2-AASIST",
+    "column": "T03",
+    "paper_reported": 13.62,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "W2V2-AASIST",
+    "column": "Overall",
+    "paper_reported": 11.71,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "MERT-W2V2-AASIST",
+    "column": "T01",
+    "paper_reported": 4.31,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "MERT-W2V2-AASIST",
+    "column": "T02",
+    "paper_reported": 9.79,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "MERT-W2V2-AASIST",
+    "column": "T03",
+    "paper_reported": 8.85,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "MERT-W2V2-AASIST",
+    "column": "Overall",
+    "paper_reported": 8.54,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "SingGraph",
+    "column": "T01",
+    "paper_reported": 4.01,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "SingGraph",
+    "column": "T02",
+    "paper_reported": 6.23,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "SingGraph",
+    "column": "T03",
+    "paper_reported": 6.3,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "SingGraph",
+    "column": "Overall",
+    "paper_reported": 6.05,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "OPERA-Net (Ours)",
+    "column": "T01",
+    "paper_reported": 3.12,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "OPERA-Net (Ours)",
+    "column": "T02",
+    "paper_reported": 4.85,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "OPERA-Net (Ours)",
+    "column": "T03",
+    "paper_reported": 4.92,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "OPERA-Net (Ours)",
+    "column": "Overall",
+    "paper_reported": 4.72,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 4,
+    "status": "no_verified_local_run"
+  }
+]

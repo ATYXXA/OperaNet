@@ -1,0 +1,83 @@
+{
+  "B01 (LFCC)": {
+    "pooled_target_pct": 11.37,
+    "spread": 1.082684914615697,
+    "mus": {
+      "A09": 3.2671885937452316,
+      "A10": 3.858131691813469,
+      "A11": 3.1756577640771866,
+      "A12": 1.0054586082696915,
+      "A13": 3.648100420832634
+    },
+    "score_direction_in_file": "higher_is_bonafide"
+  },
+  "B02 (AASIST)": {
+    "pooled_target_pct": 10.39,
+    "spread": 1.0721892641307247,
+    "mus": {
+      "A09": 3.0096546560525894,
+      "A10": 4.777044877409935,
+      "A11": 3.645094856619835,
+      "A12": 1.164417490363121,
+      "A13": 4.785207435488701
+    },
+    "score_direction_in_file": "higher_is_bonafide"
+  },
+  "I2R-ASTAR": {
+    "pooled_target_pct": 2.22,
+    "spread": 1.058315627694924,
+    "mus": {
+      "A09": 5.0395650416612625,
+      "A10": 5.216345265507698,
+      "A11": 3.9554104954004288,
+      "A12": 3.386508598923683,
+      "A13": 5.051011815667152
+    },
+    "score_direction_in_file": "higher_is_bonafide"
+  },
+  "NBUMISL": {
+    "pooled_target_pct": 2.0,
+    "spread": 1.2116658586334097,
+    "mus": {
+      "A09": 6.595580503344536,
+      "A10": 6.707659289240837,
+      "A11": 5.1211414486169815,
+      "A12": 3.512534573674202,
+      "A13": 6.770899668335915
+    },
+    "score_direction_in_file": "higher_is_bonafide"
+  },
+  "Fosafer Speech": {
+    "pooled_target_pct": 1.65,
+    "spread": 1.1053567207831518,
+    "mus": {
+      "A09": 5.89882455766201,
+      "A10": 5.569072291254997,
+      "A11": 6.75731249153614,
+      "A12": 3.5531089454889297,
+      "A13": 6.663616672158241
+    },
+    "score_direction_in_file": "higher_is_bonafide"
+  },
+  "OPERA-Net (Ours)": {
+    "pooled_target_pct": 1.54,
+    "spread": 1.0593641113106287,
+    "mus": {
+      "A09": 5.860528871417046,
+      "A10": 5.7129982858896255,
+      "A11": 6.364837512373924,
+      "A12": 3.555387631058693,
+      "A13": 6.6083478182554245
+    },
+    "score_direction_in_file": "higher_is_bonafide"
+  },
+  "_bonafide_structure": {
+    "n_bonafide_total": 2266,
+    "n_acesinger_bonafide": 474,
+    "f_acesinger": 0.2091791703442189,
+    "acesinger_shift_delta": 0.6800053175538778,
+    "delta_fit_model": "B01 (LFCC)",
+    "delta_fit_target_non_acesinger_pct": 12.03,
+    "interpretation": "acesinger bonafide 的分数在 eer.py 方向整体左移 δ，即实测更'容易'；剔除后 FAR 变差、pooled EER 上升"
+  }
+}

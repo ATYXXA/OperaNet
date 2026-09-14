@@ -1,0 +1,18 @@
+# ---- 核心 ----
+torch>=2.0
+torchaudio>=2.0
+numpy>=1.23
+librosa>=0.10
+soundfile>=0.12
+scipy>=1.10
+
+# ---- 模型与前端 ----
+transformers>=4.30          # WavLM Base+
+nnAudio>=0.3.1              # PC-CQT 前端（缺失时自动回退到内置 TorchCQT）
+PyYAML>=6.0
+tqdm>=4.65
+
+# ---- 可选 ----
+# tensorboard>=2.13
+# matplotlib>=3.7           # 画 DET 曲线
+# pandas>=2.0               # 结果汇总表

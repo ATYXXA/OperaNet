@@ -1,0 +1,5 @@
+﻿System,Input Feature,CtrSVDD EER (%) (paper),CtrSVDD min-tDCF (paper),SingFake EER (%) (paper),SingFake min-tDCF (paper),CtrSVDD EER (%) (reproduced),CtrSVDD min-tDCF (reproduced),SingFake EER (%) (reproduced),SingFake min-tDCF (reproduced)
+RawNet2 [5],Raw Waveform (Sinc),9.85,0.285,15.42,0.452,,,,
+AASIST [4],Raw Waveform (Sinc),6.42,0.186,8.35,0.211,,,,
+WavLM-Linear [8],WavLM Base+,3.95,0.114,5.8,0.165,,,,
+OPERA-Net (Ours),PC-CQT + WavLM,1.54,0.045,3.68,0.092,,,,

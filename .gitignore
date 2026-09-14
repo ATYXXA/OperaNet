@@ -1,0 +1,119 @@
+# =============================================================================
+# OPERA-Net 提交包 .gitignore
+#
+# 保留（随代码一起提交）：
+#   OPERA-Net/            论文方法的完整实现（模型、数据加载、评测、脚本、文档）
+#   Feature/README.md     论文三张图与生成脚本的对应说明
+#   Feature/make_paper_figures.py                       一键复现论文三张图
+#   Feature/draw_semantic_guided_gating_flowchart.py     -> Figure 1 整体架构
+#   Feature/create_sgg_effect_visualization.py           -> Figure 2 语义门控可视化
+#   Feature/雷达图.py                                     -> Figure 3 分攻击 EER 雷达图
+#   Feature/figures/      上述脚本重新生成的三张图（png/pdf/svg）
+#   mock_data/            与论文数据结构一致的模拟原始数据 + 生成脚本
+#
+# 忽略（不入库）：
+#   全部真实数据集与音频、冗余数据预处理代码、非论文图的生成代码与中间产物
+#
+# 注意：gitignore 的行内 # 不是注释，因此所有说明都单独成行。
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. 真实数据集 / 第三方仓库（体积大，且不随代码提交）
+#    CtrSVDD2024_Baseline/  CtrSVDD 官方 baseline 仓库 + 220,798 条 flac
+#    singfake_dataset/      SingFake 音频 + 官方 csv
+#    SingFake-main/         SingFake 官方仓库
+#    XWSB_for_SVDD2024/     SVDD2024 赛道第三方代码
+#    aasist/                AASIST 基线第三方实现
+#    wavlm-base-plus/       WavLM Base+ 预训练权重
+#    WavLabLM-MS-40k/       WavLabLM 预训练权重
+#    restored_data/         由真实数据反推的恢复产物（jsonl/csv/xlsx，含真实清单）
+# -----------------------------------------------------------------------------
+CtrSVDD2024_Baseline/
+singfake_dataset/
+SingFake-main/
+XWSB_for_SVDD2024/
+aasist/
+wavlm-base-plus/
+WavLabLM-MS-40k/
+restored_data/
+logs/
+
+# 音频 / 权重 / 特征等大文件（mock_data/ 下的小样本见第 6 节放行）
+*.flac
+*.mp3
+*.m4a
+*.ogg
+*.wav
+*.part
+*.npy
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+
+# -----------------------------------------------------------------------------
+# 2. 冗余数据预处理代码（SingFake 下载 / 切片 / 校验脚本等）
+# -----------------------------------------------------------------------------
+dataset_process/
+
+# -----------------------------------------------------------------------------
+# 3. 临时文件与本机残留
+# -----------------------------------------------------------------------------
+tmp/
+tmp_template5.txt
+*.baiduyun.uploading.cfg
+*.tmp
+*~
+.DS_Store
+Thumbs.db
+
+# -----------------------------------------------------------------------------
+# 4. 虚拟环境、缓存与构建产物
+# -----------------------------------------------------------------------------
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# -----------------------------------------------------------------------------
+# 5. Feature/：只保留生成论文三张图的脚本与它们的输出
+#    被忽略的冗余生图代码：
+#      audio_feature_visualization.py       （mel/CQT/瞬时频率 通用频谱图）
+#      create_feature_gating_visualization.py（两联图变体，非论文 Figure 2）
+#      local_artifact_comparison.py         （本地 2x3 对比图）
+#    以及 Feature/ 下所有中间 png / svg / pdf / txt / npy 与 单歌曲频谱图/
+# -----------------------------------------------------------------------------
+Feature/*
+!Feature/README.md
+!Feature/make_paper_figures.py
+!Feature/draw_semantic_guided_gating_flowchart.py
+!Feature/create_sgg_effect_visualization.py
+!Feature/雷达图.py
+!Feature/figures/
+
+# 根目录旧版雷达图（已被 Feature/雷达图.py 取代）
+fig_radar.png
+
+# 根目录真实 in-the-wild 示例歌曲（图 2 改用 mock_data 的合成样本）
+/*.mp3
+
+# -----------------------------------------------------------------------------
+# 6. mock_data/ 放行：其中的小体积模拟数据必须提交
+# -----------------------------------------------------------------------------
+!mock_data/audio/**
+!mock_data/ctrsvdd/audio/**
+!mock_data/singfake/audio/**
+
+# -----------------------------------------------------------------------------
+# 7. 可选：不提交 AI 助手的工作区记忆 / 日志（如需保留，删除本段即可）
+# -----------------------------------------------------------------------------
+.workbuddy/memory/
+.workbuddy/skills/

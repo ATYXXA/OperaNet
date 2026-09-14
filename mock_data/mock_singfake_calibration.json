@@ -1,0 +1,52 @@
+{
+  "AASIST": {
+    "overall_target_pct": 12.61,
+    "spread": 0.09752450531675552,
+    "mus": {
+      "T01": 1.6810626473990185,
+      "T02": 1.2598745594883893,
+      "T03": 1.208113910662929
+    },
+    "score_direction_in_file": "higher_is_spoof"
+  },
+  "W2V2-AASIST": {
+    "overall_target_pct": 11.71,
+    "spread": 0.12942860709597429,
+    "mus": {
+      "T01": 1.900683038325495,
+      "T02": 1.5696412757720581,
+      "T03": 1.23960704654544
+    },
+    "score_direction_in_file": "higher_is_spoof"
+  },
+  "MERT-W2V2-AASIST": {
+    "overall_target_pct": 8.54,
+    "spread": 0.27610520835626173,
+    "mus": {
+      "T01": 2.189531936478157,
+      "T02": 1.6507830736214006,
+      "T03": 1.722805618051904
+    },
+    "score_direction_in_file": "higher_is_spoof"
+  },
+  "SingGraph": {
+    "overall_target_pct": 6.05,
+    "spread": 0.09028070377346467,
+    "mus": {
+      "T01": 1.9074753132797635,
+      "T02": 1.6743972885409766,
+      "T03": 1.6682031668158799
+    },
+    "score_direction_in_file": "higher_is_spoof"
+  },
+  "OPERA-Net (Ours)": {
+    "overall_target_pct": 4.72,
+    "spread": 0.08933937561853325,
+    "mus": {
+      "T01": 2.0299215628555456,
+      "T02": 1.8078402920796972,
+      "T03": 1.8003080376875016
+    },
+    "score_direction_in_file": "higher_is_spoof"
+  }
+}

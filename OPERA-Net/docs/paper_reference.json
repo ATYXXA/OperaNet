@@ -1,0 +1,70 @@
+{
+  "source_file": "OPERA-Net Octave-aware Phase-sensitive Enhanced Recognition Architecture for Singing Voice Deepfake Detection.pdf",
+  "source_status": "user_supplied_pdf; values_transcribed_and_visually_checked; not_measured_results",
+  "tables": {
+    "1": {
+      "page": 3,
+      "dataset": "CtrSVDD",
+      "columns": ["Pooled A09-A13", "A09", "A10", "A11", "A12", "A13"],
+      "unit": "EER percent",
+      "rows": [
+        {"model": "B01 (LFCC)", "values": [11.37, 5.35, 2.92, 5.84, 29.47, 3.65], "config": null},
+        {"model": "B02 (AASIST)", "values": [10.39, 6.72, 0.96, 3.59, 26.83, 0.95], "config": null},
+        {"model": "I2R-ASTAR", "values": [2.22, 0.65, 0.51, 2.49, 4.57, 0.64], "config": null},
+        {"model": "NBUMISL", "values": [2.00, 0.13, 0.11, 0.94, 5.17, 0.10], "config": null},
+        {"model": "Fosafer Speech", "values": [1.65, 0.23, 0.37, 0.06, 4.19, 0.07], "config": null},
+        {"model": "OPERA-Net (Ours)", "values": [1.54, 0.20, 0.25, 0.09, 3.85, 0.06], "config": "opera_net.yaml"}
+      ]
+    },
+    "2": {
+      "page": 4,
+      "dataset": "SingFake",
+      "columns": ["T01", "T02", "T03", "Overall"],
+      "unit": "EER percent",
+      "rows": [
+        {"model": "AASIST", "feature": "Raw Waveform", "values": [6.28, 12.55, 13.55, 12.61], "config": null},
+        {"model": "W2V2-AASIST", "feature": "Wav2vec 2.0", "values": [4.62, 8.23, 13.62, 11.71], "config": null},
+        {"model": "MERT-W2V2-AASIST", "feature": "Wav2vec 2.0", "values": [4.31, 9.79, 8.85, 8.54], "config": null},
+        {"model": "SingGraph", "feature": "MERT + W2V2", "values": [4.01, 6.23, 6.30, 6.05], "config": null},
+        {"model": "OPERA-Net (Ours)", "feature": "PC-CQT + WavLM", "values": [3.12, 4.85, 4.92, 4.72], "config": "opera_net.yaml"}
+      ]
+    },
+    "3": {
+      "page": 4,
+      "dataset": "CtrSVDD and SingFake",
+      "columns": ["CtrSVDD", "SingFake"],
+      "unit": "EER percent",
+      "rows": [
+        {"model": "WavLM Stream (Fine-tuned)", "values": [2.85, 6.15], "config": "ablation_wavlm_only.yaml"},
+        {"model": "+ CQT (Magnitude-only)", "values": [2.24, 5.45], "config": "ablation_cqt_mag.yaml"},
+        {"model": "+ PC-CQT (w/ Phase)", "values": [1.82, 4.95], "config": "ablation_pc_cqt.yaml"},
+        {"model": "OPERA-Net (Full w/ Gating)", "values": [1.54, 4.72], "config": "opera_net.yaml"}
+      ]
+    }
+  },
+  "explicit_parameters": {
+    "sample_rate": 16000, "segment_seconds": 4, "fmin": 32.7,
+    "n_bins": 84, "bins_per_octave": 12, "hop_length": 320,
+    "frontend": "nnAudio complex CQT; variant unspecified",
+    "signal_encoder": "lightweight ResNet-18",
+    "semantic_encoder": "WavLM Base+",
+    "frozen_transformer_layers": 6, "finetuned_transformer_layers": 6,
+    "phase": "wrap(phi[n]-phi[n-1]) in (-pi,pi]",
+    "gate": "sigmoid(MLP(F_sem)); F_sig * gate",
+    "classifier": "concatenate semantic and gated signal features; two FC layers",
+    "loss": "weighted cross entropy", "optimizer": "AdamW with layerwise learning-rate decay",
+    "ctrsvdd_singers": {"train": 59, "dev": 55, "eval": 48},
+    "ctrsvdd_ranking_attacks": ["A09", "A10", "A11", "A12", "A13"],
+    "singfake_subsets": ["T01", "T02", "T03"], "metric": "EER percent"
+  },
+  "not_specified": [
+    "training corpus assignment is not explicitly stated in the current PDF",
+    "whether dev is used for fitting or checkpoint selection",
+    "SingFake segment versus track evaluation and Overall pooling rule",
+    "T03 codecs, bitrates, exact source segments and codec versions",
+    "learning rates, decay factor/direction, epochs, batch size, seed, scheduler",
+    "C, T, exact ResNet widths/strides, pooling and dropout",
+    "CQT centering, padding, normalization and initial phase treatment",
+    "original predictions, checkpoints, logs, per-seed variance"
+  ]
+}

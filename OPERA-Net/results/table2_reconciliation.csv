@@ -1,0 +1,5 @@
+﻿System,Input Feature,CtrSVDD EER (%) (paper),CtrSVDD min-tDCF (paper),SingFake EER (%) (paper),SingFake min-tDCF (paper),CtrSVDD EER (%) (reproduced),CtrSVDD min-tDCF (reproduced),SingFake EER (%) (reproduced),SingFake min-tDCF (reproduced)
+WavLM Stream (Fine-tuned),WavLM Base+,2.85,0.088,5.12,0.155,,,,
++ CQT (Magnitude-only),WavLM + CQT,2.24,0.065,4.45,0.13,,,,
++ PC-CQT (w/ Phase),WavLM + PC-CQT,1.82,0.052,3.95,0.108,,,,
+OPERA-Net (Full w/ Gating),PC-CQT + WavLM,1.54,0.045,3.68,0.092,,,,

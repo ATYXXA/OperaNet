@@ -1,0 +1,362 @@
+[
+  {
+    "model": "B01 (LFCC)",
+    "column": "Pooled A09-A13",
+    "paper_reported": 11.37,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "B01 (LFCC)",
+    "column": "A09",
+    "paper_reported": 5.35,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "B01 (LFCC)",
+    "column": "A10",
+    "paper_reported": 2.92,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "B01 (LFCC)",
+    "column": "A11",
+    "paper_reported": 5.84,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "B01 (LFCC)",
+    "column": "A12",
+    "paper_reported": 29.47,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "B01 (LFCC)",
+    "column": "A13",
+    "paper_reported": 3.65,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "B02 (AASIST)",
+    "column": "Pooled A09-A13",
+    "paper_reported": 10.39,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "B02 (AASIST)",
+    "column": "A09",
+    "paper_reported": 6.72,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "B02 (AASIST)",
+    "column": "A10",
+    "paper_reported": 0.96,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "B02 (AASIST)",
+    "column": "A11",
+    "paper_reported": 3.59,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "B02 (AASIST)",
+    "column": "A12",
+    "paper_reported": 26.83,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "B02 (AASIST)",
+    "column": "A13",
+    "paper_reported": 0.95,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "I2R-ASTAR",
+    "column": "Pooled A09-A13",
+    "paper_reported": 2.22,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "I2R-ASTAR",
+    "column": "A09",
+    "paper_reported": 0.65,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "I2R-ASTAR",
+    "column": "A10",
+    "paper_reported": 0.51,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "I2R-ASTAR",
+    "column": "A11",
+    "paper_reported": 2.49,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "I2R-ASTAR",
+    "column": "A12",
+    "paper_reported": 4.57,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "I2R-ASTAR",
+    "column": "A13",
+    "paper_reported": 0.64,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "NBUMISL",
+    "column": "Pooled A09-A13",
+    "paper_reported": 2.0,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "NBUMISL",
+    "column": "A09",
+    "paper_reported": 0.13,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "NBUMISL",
+    "column": "A10",
+    "paper_reported": 0.11,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "NBUMISL",
+    "column": "A11",
+    "paper_reported": 0.94,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "NBUMISL",
+    "column": "A12",
+    "paper_reported": 5.17,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "NBUMISL",
+    "column": "A13",
+    "paper_reported": 0.1,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "Fosafer Speech",
+    "column": "Pooled A09-A13",
+    "paper_reported": 1.65,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "Fosafer Speech",
+    "column": "A09",
+    "paper_reported": 0.23,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "Fosafer Speech",
+    "column": "A10",
+    "paper_reported": 0.37,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "Fosafer Speech",
+    "column": "A11",
+    "paper_reported": 0.06,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "Fosafer Speech",
+    "column": "A12",
+    "paper_reported": 4.19,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "Fosafer Speech",
+    "column": "A13",
+    "paper_reported": 0.07,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "OPERA-Net (Ours)",
+    "column": "Pooled A09-A13",
+    "paper_reported": 1.54,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "OPERA-Net (Ours)",
+    "column": "A09",
+    "paper_reported": 0.2,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "OPERA-Net (Ours)",
+    "column": "A10",
+    "paper_reported": 0.25,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "OPERA-Net (Ours)",
+    "column": "A11",
+    "paper_reported": 0.09,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "OPERA-Net (Ours)",
+    "column": "A12",
+    "paper_reported": 3.85,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  },
+  {
+    "model": "OPERA-Net (Ours)",
+    "column": "A13",
+    "paper_reported": 0.06,
+    "measured": null,
+    "delta": null,
+    "unit": "EER percent",
+    "paper_page": 3,
+    "status": "no_verified_local_run"
+  }
+]
